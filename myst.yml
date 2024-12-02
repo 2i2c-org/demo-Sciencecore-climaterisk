@@ -4,7 +4,7 @@ extends:
   - https://raw.githubusercontent.com/2i2c-org/demo-gallery/refs/heads/main/myst.shared.yaml
 project:
   id: bb9c8923-1c18-4fae-9d7a-40b1e2252236
-  title: Sciencecore: climaterisk
+  title: Sciencecore climaterisk
   # description:
   # keywords: []
   # authors: []
