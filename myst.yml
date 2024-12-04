@@ -8,6 +8,8 @@ project:
   jupyter:
     binder:
       url: https://binder.opensci.2i2c.cloud/
+  references:
+    gallery: https://2i2c.org/demo-gallery
   # description:
   # keywords: []
   # authors: []
@@ -37,14 +39,14 @@ project:
         - pattern: book/03_Using_NASA_EarthData/*.md
     # - title: 3. Utilización de EarthData de la NASA
     #   children:
-    #     - pattern: book/espanol/03_Using_NASA_EarthData/*.md    
+    #     - pattern: book/espanol/03_Using_NASA_EarthData/*.md
     - title: 4. Case Studies
       children:
         - pattern: book/04_Case_Studies/*.md
     # - title: 4. Los Casos Prácticos
     #   children:
-    #     - pattern: book/espanol/04_Case_Studies/*.md    
-    
+    #     - pattern: book/espanol/04_Case_Studies/*.md
+
 site:
   options:
     logo_text: climaterisk
