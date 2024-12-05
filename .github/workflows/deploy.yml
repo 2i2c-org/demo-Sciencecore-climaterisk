@@ -44,6 +44,7 @@ jobs:
             jupyter_server
       - name: Build HTML Assets
         run: myst build --html
+        shell: micromamba-shell {0}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
