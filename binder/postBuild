@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 set -eux
 
+# Override to open jupytext md files as notebooks
 mkdir -p ${NB_PYTHON_PREFIX}/share/jupyter/lab/settings
 cp binder/overrides.json ${NB_PYTHON_PREFIX}/share/jupyter/lab/settings
+
+# .netrc for earthdata credentials
+touch ${HOME}/.netrc | chmod og-rw ${HOME}/.netrc | echo machine urs.earthdata.nasa.gov >> ${HOME}/.netrc
+echo login ${EARTHDATA_USERNAME} >> ~/.netrc | echo password ${EARTHDATA_PASSWORD} >> ${HOME}/.netrc
