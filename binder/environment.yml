@@ -1,3 +1,4 @@
+name: climaterisk-env
 channels:
   - conda-forge
   - pyviz
