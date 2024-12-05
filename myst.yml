@@ -49,7 +49,7 @@ project:
 
 site:
   options:
-    logo_text: climaterisk
+    logo_text: ClimateRisk Demo
   # options:
   #   favicon: favicon.ico
   #   logo: site_logo.png
