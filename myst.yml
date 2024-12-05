@@ -3,7 +3,7 @@ version: 1
 extends:
   - https://raw.githubusercontent.com/2i2c-org/demo-gallery/refs/heads/main/myst.shared.yaml
 project:
-  title: Sciencecore climaterisk
+  title: ScienceCore Climate Risks
   github: 2i2c-org/demo-Sciencecore-climaterisk
   jupyter:
     binder:
