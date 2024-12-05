@@ -24,7 +24,6 @@ import rasterio
 import rioxarray as rio
 from pathlib import Path
 
-FILE_STEM = Path.cwd().parent if 'book' == Path.cwd().parent.stem else 'book'
 ```
 
 ***
@@ -48,7 +47,7 @@ Observe first that `open_rasterio` works on local file paths and remote URLs.
 
 ```{code-cell} python jupyter={"source_hidden": false}
 %%time
-LOCAL_PATH = Path(FILE_STEM, 'assets/OPERA_L3_DIST-ALERT-HLS_T10TEM_20220815T185931Z_20220817T153514Z_S2A_30_v0.1_VEG-ANOM-MAX.tif')
+LOCAL_PATH = Path.cwd().parent / 'assets' / 'OPERA_L3_DIST-ALERT-HLS_T10TEM_20220815T185931Z_20220817T153514Z_S2A_30_v0.1_VEG-ANOM-MAX.tif'
 data = rio.open_rasterio(LOCAL_PATH)
 ```
 
@@ -90,7 +89,7 @@ From the [Rasterio documentation](https://rasterio.readthedocs.io/en/stable):
 
 ```{code-cell} python jupyter={"source_hidden": false}
 # Show rasterio.open works using context manager
-LOCAL_PATH = Path(FILE_STEM, 'assets/OPERA_L3_DIST-ALERT-HLS_T10TEM_20220815T185931Z_20220817T153514Z_S2A_30_v0.1_VEG-ANOM-MAX.tif')
+LOCAL_PATH = Path.cwd().parent / 'assets' / 'OPERA_L3_DIST-ALERT-HLS_T10TEM_20220815T185931Z_20220817T153514Z_S2A_30_v0.1_VEG-ANOM-MAX.tif'
 print(LOCAL_PATH)
 ```
 

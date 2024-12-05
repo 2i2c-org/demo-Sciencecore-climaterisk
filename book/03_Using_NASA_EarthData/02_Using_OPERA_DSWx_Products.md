@@ -78,8 +78,7 @@ from bokeh.models import FixedTicker
 ```
 
 ```{code-cell} python
-FILE_STEM = Path.cwd().parent if 'book' == Path.cwd().parent.stem else 'book'
-LOCAL_PATH = Path(FILE_STEM, 'assets/OPERA_L3_DSWx-HLS_T12SVG_20230411T180222Z_20230414T030945Z_L8_30_v1.0_B01_WTR.tif')
+LOCAL_PATH = Path.cwd().parent / 'assets' / 'OPERA_L3_DSWx-HLS_T12SVG_20230411T180222Z_20230414T030945Z_L8_30_v1.0_B01_WTR.tif'
 b01_wtr = rio.open_rasterio(LOCAL_PATH).rename({'x':'longitude', 'y':'latitude'}).squeeze()
 ```
 

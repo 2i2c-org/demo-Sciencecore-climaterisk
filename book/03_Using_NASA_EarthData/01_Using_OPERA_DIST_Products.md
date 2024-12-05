@@ -74,7 +74,6 @@ gv.extension('bokeh')
 import hvplot.xarray
 from bokeh.models import FixedTicker
 
-FILE_STEM = Path.cwd().parent if 'book' == Path.cwd().parent.stem else 'book'
 ```
 
 <!-- #region jupyter={"source_hidden": false} -->
@@ -82,7 +81,7 @@ We'll read the data from a local file `'OPERA_L3_DIST-ALERT-HLS_T10TEM_20220815T
 <!-- #endregion -->
 
 ```{code-cell} python jupyter={"source_hidden": false}
-LOCAL_PATH = Path(FILE_STEM, 'assets/OPERA_L3_DIST-ALERT-HLS_T10TEM_20220815T185931Z_20220817T153514Z_S2A_30_v0.1_VEG-ANOM-MAX.tif')
+LOCAL_PATH = Path.cwd().parent / 'assets' / 'OPERA_L3_DIST-ALERT-HLS_T10TEM_20220815T185931Z_20220817T153514Z_S2A_30_v0.1_VEG-ANOM-MAX.tif'
 filename = LOCAL_PATH.name
 print(filename)
 ```
@@ -197,7 +196,7 @@ We'll load and relabel the `DataArray` as before.
 <!-- #endregion -->
 
 ```{code-cell} python jupyter={"source_hidden": false}
-LOCAL_PATH = Path(FILE_STEM, 'assets/OPERA_L3_DIST-ALERT-HLS_T10TEM_20220815T185931Z_20220817T153514Z_S2A_30_v0.1_VEG-DIST-DATE.tif')
+LOCAL_PATH = Path.cwd().parent / 'assets' / 'OPERA_L3_DIST-ALERT-HLS_T10TEM_20220815T185931Z_20220817T153514Z_S2A_30_v0.1_VEG-DIST-DATE.tif'
 data = rio.open_rasterio(LOCAL_PATH)
 data = data.rename({'x':'longitude', 'y':'latitude', 'band':'band'}).squeeze()
 ```
@@ -266,7 +265,7 @@ Notice the use of the `FixedTicker` in defining a colorbar better suited for a d
 <!-- #endregion -->
 
 ```{code-cell} python jupyter={"source_hidden": false}
-LOCAL_PATH = Path(FILE_STEM, 'assets/OPERA_L3_DIST-ALERT-HLS_T10TEM_20220815T185931Z_20220817T153514Z_S2A_30_v0.1_VEG-DIST-STATUS.tif')
+LOCAL_PATH = Path.cwd().parent / 'assets' / 'OPERA_L3_DIST-ALERT-HLS_T10TEM_20220815T185931Z_20220817T153514Z_S2A_30_v0.1_VEG-DIST-STATUS.tif'
 data = rio.open_rasterio(LOCAL_PATH)
 data = data.rename({'x':'longitude', 'y':'latitude', 'band':'band'}).squeeze()
 ```

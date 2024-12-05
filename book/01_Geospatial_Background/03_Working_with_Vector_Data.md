@@ -78,7 +78,6 @@ Let's see how to parse and plot GeoJSON files using [GeoPandas](https://geopanda
 import geopandas as gpd
 from pathlib import Path
 
-FILE_STEM = Path.cwd().parent if 'book' == Path.cwd().parent.stem else 'book'
 GEOJSON = Path(FILE_STEM, 'assets/cables.geojson')
 print(GEOJSON)
 ```

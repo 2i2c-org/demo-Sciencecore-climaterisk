@@ -44,7 +44,6 @@ gv.extension('bokeh')
 ```
 
 ```{code-cell} python jupyter={"source_hidden": false}
-FILE_STEM = Path.cwd().parent if 'book' == Path.cwd().parent.stem else 'book'
 ASSET_PATH = Path(FILE_STEM, 'assets')
 SHAPE_FILE = ASSET_PATH / 'shapefiles' / 'mckinney' / 'McKinney_NIFC.shp'
 RASTER_FILES = list(ASSET_PATH.glob('OPERA*VEG*.tif'))
