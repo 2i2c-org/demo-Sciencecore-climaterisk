@@ -1,14 +1,14 @@
 ---
 jupytext:
-text_representation:
-    extension: .md
-    format_name: markdown
-    format_version: '1.3'
-    jupytext_version: 1.16.4
+    text_representation:
+        extension: .md
+        format_name: markdown
+        format_version: '1.3'
+        jupytext_version: 1.16.4
 kernelspec:
-display_name: Python 3 (ipykernel)
-language: python
-name: python3
+    display_name: Python 3 (ipykernel)
+    language: python
+    name: python3
 ---
 
 # Generating a Mosaicked Image of Lake Mead
