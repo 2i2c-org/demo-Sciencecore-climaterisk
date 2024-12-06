@@ -14,8 +14,8 @@ Using NASA Earthdata Cloud data to assess the risk of wildfire, drought, and flo
 If you'd like to develop and/or build the NASA TOPS-T Reproducibly Analyzing Wildfire, Drought, and Flood Risk with NASA Earthdata Cloud book, then in a terminal you should:
 
 1. Clone this repository
-1. Run `pip install -r requirements.txt` (it is recommended you do this within a virtual environment)
-1. (Optional) Edit the books source files located in the `book/` directory
+1. Run `conda env create binder/environment.yml` and activate this environment
+1. (Optional) Edit the book source files located in the `book/` directory
 1. Change to the `book` directory with `cd book/`
 1. Run `myst start` to remove any existing builds
 1. Run `myst build --html` to build HTML version of book
