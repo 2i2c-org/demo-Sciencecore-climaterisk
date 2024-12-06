@@ -1,6 +1,6 @@
 # Determining Climate Risks with NASA Earthdata Cloud
 
-:::{image} assets/banner.jpg
+:::{figure} assets/banner.jpg
 :align: center
 Using NASA Earthdata Cloud data to assess the risk of wildfire, drought, and flood.
 :::
@@ -10,6 +10,7 @@ See the original [MyST site](https://sciencecore.github.io/climaterisk/) and [Gi
 :::
 
 ![](xref:gallery#note-launcher)
+![](xref:gallery#hint-binder)
 
 Under joint development by
 
