@@ -5,8 +5,8 @@
 Using NASA Earthdata Cloud data to assess the risk of wildfire, drought, and flood.
 :::
 
-![](xref:gallery#note-launcher)
-![](xref:gallery#hint-binder)
+![](xref:shared#note-launcher)
+![](xref:shared#hint-binder)
 
 Under joint development by
 
