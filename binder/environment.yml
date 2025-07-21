@@ -45,6 +45,7 @@ dependencies:
   - numpy
   - panel
   - pystac-client
+  - pandoc
   - python[version='>=3.12']
   - rasterio
   - requests
